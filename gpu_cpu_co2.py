@@ -337,7 +337,7 @@ class ModelSelectorDialog(QDialog):
         layout.addWidget(buttons)
 
         # Add some default models that we know exist
-        default_models = ["llama3.2:1b", "gpt-oss", "mistral-small3.1", "gemma3"]
+        default_models = ["llama3.2:1b", "gpt-oss:latest", "mistral-small3.1:latest", "gemma3:latest"]
 
         # Try to get installed models
         try:
@@ -418,24 +418,24 @@ class CarbonTrackerGUI(QMainWindow):
         # Add this model_info dictionary
         self.model_info = {
             "llama3.2:1b": {
-                "name": "Llama 2 7B",
-                "parameters": "7 billion",
+                "name": "Llama 3.2 1b",
+                "parameters": "1 billion",
                 "context_length": "4096 tokens"
             },
             "gpt-oss": {
-                "name": "Llama 2 1B",
-                "parameters": "1.1 billion",
+                "name": "ChatGPT",
+                "parameters": "20 billion",
                 "context_length": "4096 tokens"
             },
             "mistral-small3.1": {
-                "name": "Mistral 7B",
-                "parameters": "7.3 billion",
+                "name": "Mistral small3.1",
+                "parameters": "actually small",
                 "context_length": "8192 tokens"
             },
             "gemma3": {
-                "name": "Code Llama 7B",
-                "parameters": "7 billion",
-                "context_length": "4096 tokens"
+                "name": "Gemma",
+                "parameters": "morbillion",
+                "context_length": "infinite tokens"
             }
         }
 
