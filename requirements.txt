@@ -57,3 +57,4 @@ urllib3==2.2.3
 wcwidth==0.2.13
 WMI==1.5.1
 yarl==1.17.2
+langchain_ollama==0.3.7
